@@ -18,11 +18,6 @@ def sorteador(request):
     return render(request, 'sort/sorteio.html', {'form': form})
 
 
-def base_layout(request):
-
-    return render(request, 'sort/sorteio.html', {})
-
-
 def sorteio(request):
     """
     Função que carrega o arquivo xlsx, sorteia uma linha aleatoria e exibe dados das celulas da linha

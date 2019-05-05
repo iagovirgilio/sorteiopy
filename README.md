@@ -11,3 +11,5 @@ O arquivo deve conter duas colunas (A e B), onde a primeira linha vem os título
 
 Caso a linha sorteada seja a segunda o resultado impresso será:
 "cod1 - dado1"
+
+**Use especificamente as colunas A e B da planilha.**

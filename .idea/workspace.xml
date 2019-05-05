@@ -2,8 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="c581dffd-180c-4add-83f1-43ba273b9fee" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/sort/templates/sort/base.html" beforeDir="false" afterPath="$PROJECT_DIR$/sort/templates/sort/base.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/sort/templates/sort/sorteio.html" beforeDir="false" afterPath="$PROJECT_DIR$/sort/templates/sort/sorteio.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -71,8 +70,8 @@
         <entry file="file://$PROJECT_DIR$/README.md">
           <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
             <state split_layout="SPLIT">
-              <first_editor relative-caret-position="88">
-                <caret line="4" column="92" selection-start-line="4" selection-start-column="92" selection-end-line="4" selection-end-column="92" />
+              <first_editor relative-caret-position="308">
+                <caret line="14" column="49" selection-start-line="14" selection-start-column="49" selection-end-line="14" selection-end-column="49" />
               </first_editor>
               <second_editor />
             </state>
@@ -347,8 +346,8 @@
     <entry file="file://$PROJECT_DIR$/README.md">
       <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
         <state split_layout="SPLIT">
-          <first_editor relative-caret-position="88">
-            <caret line="4" column="92" selection-start-line="4" selection-start-column="92" selection-end-line="4" selection-end-column="92" />
+          <first_editor relative-caret-position="308">
+            <caret line="14" column="49" selection-start-line="14" selection-start-column="49" selection-end-line="14" selection-end-column="49" />
           </first_editor>
           <second_editor />
         </state>

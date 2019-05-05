@@ -6,12 +6,15 @@
 
     <div class="card" style="width: 100%">
         <div class="card-header">
-            Featured
+            <h2>Sorteio</h2>
         </div>
         <div class="card-body">
-            <h5 class="card-title">Special title treatment</h5>
-            <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
-            <h3>{{ numero }} - {{ nome }}</h3>
+            {% if not nome %}
+                <h3 class="card-text mb-5">Selecione seu arquivo no formato XLSX</h3>
+            {% endif %}
+            {% if nome %}
+                <h3 class="card-text mb-5">Parabéns, {{ numero }} - {{ nome }}! Você foi premiado.</h3>
+            {% endif %}
 
             <form action="{% url 'sorteio' %}" method="post" id="form-upload" enctype="multipart/form-data">
                 {% csrf_token %}
@@ -20,18 +23,18 @@
                 <div class="input-group mb-3">
                     <div class="custom-file">
                         {{ form.file }}
-                        <label class="custom-file-label" for="id_file" aria-describedby="inputGroupFileAddon02">Escolher arquivo</label>
+                        <label class="custom-file-label" for="id_file" aria-describedby="inputGroupFileAddon02">Clique aqui para escolher arquivo</label>
                     </div>
                 </div>
                 <button class="btn btn-info" type="submit">Sortear</button>
                 {% endif %}
-
             </form>
 
             {% if nome %}
-                <a href="javascript:window.location.reload(true)" class="btn btn-info">Sortear Novamente</a>
-                <a href="./" class="btn btn-info">Carregar novo arquivo</a>
+                <a href="javascript:window.location.reload(true)" class="btn btn-info mb-3">Sortear Novamente</a>
+                <a href="./" class="btn btn-info mb-3">Carregar novo arquivo</a>
             {% endif %}
+
         </div>
     </div>
 

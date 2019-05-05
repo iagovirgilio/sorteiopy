@@ -41,3 +41,8 @@ def sorteio(request):
         nome_sorteado = sheetranges['B' + str(linha_aleatoria)].value
 
         return render(request, 'sort/sorteio.html', {'numero': numero_sorteado, 'nome': nome_sorteado})
+
+
+def sobre(request):
+
+    return render(request, 'sort/sobre.html', {})

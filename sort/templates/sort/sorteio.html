@@ -8,32 +8,32 @@
 
     <div class="card" style="width: 100%">
         <div class="card-header">
-            <h2>Sorteio</h2>
+            Sorteador para arquivos em excel <strong>gratuito!</strong>
         </div>
         <div class="card-body">
             {% if not nome %}
                 <h3 class="card-text mb-5">Selecione seu arquivo no formato XLSX</h3>
             {% endif %}
             {% if nome %}
-                <h3 class="card-text mb-5">Parabéns, {{ numero }} - {{ nome }}! Você foi premiado.</h3>
+                <h3 class="card-text mb-5">Parabéns, {{ numero }} - {{ nome }}! Você ganhou.</h3>
             {% endif %}
 
-            <form action="{% url 'sorteio' %}" method="post" id="form-upload" enctype="multipart/form-data">
+            <form action="{% url 'sorteio' %}" class="text-center" method="post" id="form-upload" enctype="multipart/form-data">
                 {% csrf_token %}
 
                 {% if not nome %}
                 <div class="input-group mb-3">
                     <div class="custom-file">
                         {{ form.file }}
-                        <label class="custom-file-label" for="id_file" aria-describedby="inputGroupFileAddon02">Clique aqui para escolher arquivo</label>
+                        <label class="custom-file-label text-left" for="id_file" aria-describedby="inputGroupFileAddon02">Clique aqui para escolher arquivo</label>
                     </div>
                 </div>
-                <button class="btn btn-info" type="submit">Sortear</button>
+                <button class="btn btn-success" type="submit">SORTEAR AGORA</button>
                 {% endif %}
             </form>
 
             {% if nome %}
-                <a href="javascript:window.location.reload(true)" class="btn btn-info mb-3">Sortear Novamente</a>
+                <a href="javascript:window.location.reload(true)" class="btn btn-success mb-3">Sortear Novamente</a>
                 <a href="./" class="btn btn-info mb-3">Carregar novo arquivo</a>
             {% endif %}
 

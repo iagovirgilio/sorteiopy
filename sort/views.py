@@ -20,7 +20,7 @@ def sorteador(request):
 
 def base_layout(request):
 
-    return render(request, 'sort/base.html', {})
+    return render(request, 'sort/sorteio.html', {})
 
 
 def sorteio(request):

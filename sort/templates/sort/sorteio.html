@@ -15,7 +15,7 @@
                 <h3 class="card-text mb-5">Selecione seu arquivo no formato XLSX</h3>
             {% endif %}
             {% if nome %}
-                <h3 class="card-text mb-5">Parabéns, {{ numero }} - {{ nome }}! Você ganhou.</h3>
+                <h3 class="card-text mb-5" style="color: navy;">Parabéns, {{ numero }} - {{ nome }}! Você ganhou.</h3>
             {% endif %}
 
             <form action="{% url 'sorteio' %}" class="text-center" method="post" id="form-upload" enctype="multipart/form-data">

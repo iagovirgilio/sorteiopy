@@ -1,0 +1,41 @@
+{% extends 'sort/base.html' %}
+
+{% block content %}
+
+<main role="main" class="container d-flex justify-content-center">
+
+    <div class="card">
+        <div class="card-header">
+            Featured
+        </div>
+        <div class="card-body">
+            <h5 class="card-title">Special title treatment</h5>
+            <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
+            <h3>{{ numero }} - {{ nome }}</h3>
+
+            <form action="{% url 'sorteio' %}" method="post" id="form-upload" enctype="multipart/form-data">
+                {% csrf_token %}
+
+                {% if not nome %}
+                <div class="input-group mb-3">
+                    <div class="custom-file">
+                        {{ form.file }}
+                        <label class="custom-file-label" for="id_file" aria-describedby="inputGroupFileAddon02">Escolher arquivo</label>
+
+                    </div>
+                    <div class="input-group-append">
+                        <button class="input-group-text" type="submit">Sortear</button>
+                    </div>
+                </div>
+                {% endif %}
+
+            </form>
+
+            {% if nome %}
+                <a href="javascript:window.location.reload(true)" class="btn btn-info">Sortear Novamente</a>
+            {% endif %}
+        </div>
+    </div>
+
+</main><!-- /.container -->
+{% endblock %}

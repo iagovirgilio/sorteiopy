@@ -31,8 +31,9 @@ def sorteio(request):
     else:
         file = request.FILES["file"]
         wb = openpyxl.load_workbook(file)
+        folha = wb.get_sheet_names()
 
-        sheetranges = wb['sheet1']
+        sheetranges = wb[folha[0]]
 
         numero_linhas = sheetranges.max_row
         linha_aleatoria = randint(2, numero_linhas)

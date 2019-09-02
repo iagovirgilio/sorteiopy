@@ -1,6 +1,6 @@
 # SorteioPy
 
-A aplicação carrega um arquivo no formato xlsx, conta a quantidade de linhas no arquivo, escolhe uma linha aleatória e exibe os dados das células da linha escolhida.
+A aplicação, feita em Django, carrega um arquivo no formato xlsx, conta a quantidade de linhas no arquivo, escolhe uma linha aleatória e exibe os dados das células da linha escolhida.
 
 O arquivo deve conter duas colunas (A e B), onde a primeira linha vem os títulos das colunas. Como no exemplo abaixo:
 
